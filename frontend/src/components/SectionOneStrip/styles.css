@@ -1,0 +1,30 @@
+.strip-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding:1rem;
+    border-radius: 20px;
+}
+.strip-1-content{
+    width:100%;
+}
+.strip-icon{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.fill-icon{
+    background-color: #FDA015;
+    padding:0.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+}
+.icon-content{
+    color:white;
+    text-align: center;
+    padding:1rem 0 0 0;
+    font-family: "Poppins";
+}

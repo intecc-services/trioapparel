@@ -1,0 +1,132 @@
+.our-products{
+    background-color: black;
+    padding: 0 0 5rem 0;
+}
+
+/* Products Heading */
+.heading{
+    position: relative;
+}
+.head-content{
+    text-align: center;
+    font-family: "Poppins";
+    font-weight: 900;
+    font-size:4rem;
+    position: absolute;
+    bottom:30%;
+    width:100%;
+    background: linear-gradient(179.9deg, #FFFFFF 0.09%, rgba(255, 255, 255, 0) 181.85%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.overlay{
+    position: absolute;
+    width:100%;
+    height: 100%;
+    bottom:0;
+    background-color: rgba(0,0,0,0.6);
+}
+.head-image{
+    overflow: hidden;
+    position: relative;
+    /* background-color: rgba(0,0,0,0.6); */
+}
+
+/* Info */
+.info-our-products{
+    width:100%;
+    height: 100%;
+    position: relative;
+    /* background-image: url('./bg3.png'); */
+}
+.info-image{
+    width:100%;
+    position: relative;
+}
+.img-info-tag{
+    width:100%;
+}
+.overlay-info{
+    position: absolute;
+    bottom:0;
+    width:100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+}
+.info-content{
+    position: absolute;
+    z-index:90;
+    bottom:0;
+    width:100%;
+    height: 100%;
+    /* padding:1rem; */
+}
+.info-image-content{
+    display:flex;
+    /* padding:0rem 1rem 0 0; */
+    width:100%;
+    justify-content: space-around;
+    /* background-color: red; */
+    z-index:99;
+}
+.images-info{
+    width:90%;
+    height:90%;
+    position: relative;
+    padding:4rem 1rem;
+}
+.img-mains{
+    width:100%;
+    height: 100%;
+    position: relative;
+    display:flex;
+    justify-content: center;
+}
+.img-tag-info{
+    width:80%;
+    height: 100%;
+    position: relative;
+}
+.img-content{
+    width:auto;
+    position: absolute;
+    background-color: rgba(0,0,0,0.6);
+    bottom: 0%;
+    width: 80%;
+    height:20%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    font-family: "Poppins";
+    font-weight:700;
+    font-size:3rem;
+}
+
+.info-content-main{
+    font-family: 'Poppins';
+    font-size:1.2rem;
+    /* background-color: red; */
+    padding: 4rem 0;
+    background-image: linear-gradient(to bottom,rgba(0,0,0,0),rgba(0,0,0,0.8));
+    z-index:99;
+}
+.info-part-1{
+    display:flex;
+    justify-content: space-around;
+    width:100%;
+    color:#D9A938;
+}
+.info-part-1-1,.info-part-1-2{
+    width:100%;
+    display:flex;
+    justify-content: space-around;
+    color:#D9A938;
+    padding:1rem 0 5rem 0;
+}
+.info-part-2,.info-part-3,.info-part-4{
+    color:white;
+    text-align: center;
+    padding:1rem;
+}
