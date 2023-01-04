@@ -1,5 +1,6 @@
 import "./App.css";
 import AboutTrio from "./components/AboutTrio";
+import Footer from "./components/Footer";
 import ImgSlider from "./components/ImgSlider";
 import OurProducts from "./components/OurProducts";
 import SectionOne from "./components/SectionOne";
@@ -23,6 +24,9 @@ function App() {
       </div>
       <div>
         <AboutTrio/>
+      </div>
+      <div>
+        <Footer/>
       </div>
     </div>
   );
