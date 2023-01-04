@@ -37,7 +37,7 @@ function FormSection() {
                                     <textarea className='text-area' placeholder='Write a comment' />
                                 </form>
                             </div>
-                            <Button variant="outline-dark" style={{marginTop: "5%",padding:"0",marginRight:"3%",fontWeight:"500",fontSize:"20px", width:"30%",height:"10%"}}>Clear</Button>
+                            <Button variant="outline-dark" style={{backgroundColor:"white",marginTop: "5%",padding:"0",marginRight:"3%",fontWeight:"500",fontSize:"20px", width:"30%",height:"10%"}}>Clear</Button>
                             <Button variant="dark"style={{marginTop: "5%",padding:"0",marginRight:"3%",fontWeight:"500",fontSize:"20px", width:"30%",height:"10%"}}>Submit</Button>
                         </Card.Body>
                     </Card>
