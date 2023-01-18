@@ -1,15 +1,13 @@
 import React from 'react'
 import './styles.css'
 import ProductsHeading from './ProductsHeading'
-import ImgSlider from '../ImgSlider'
-import Info from './Info'
+import MyCarousel from './MyCarousel'
 
 const OurProducts = () => {
   return (
     <div className='our-products'>
         <ProductsHeading/>
-        {/* <ImgSlider/> */}
-        <Info/>
+        <MyCarousel/>
     </div>
   )
 }

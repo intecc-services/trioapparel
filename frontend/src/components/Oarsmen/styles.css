@@ -1,0 +1,159 @@
+/* oarsmen bg */
+.oarsmen{
+    width:100%;
+    height:80%;
+    position: relative;
+    /* padding:20%; */
+}
+.oarsmen-bg{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.oarsmen-bg-tag{
+    width:100%;
+    height: 100%;
+    position:relative;
+}
+.overlay-oarsmen{
+    position: absolute;
+    background-color: rgba(0,0,0,0.6);
+    width:100%;
+    height: 100%;
+    bottom:0;
+}
+.oarsmen-carousel{
+    position: absolute;
+    top:0;
+    /* background-color: black; */
+    /* padding:20%; */
+}
+
+/* Carousel */
+.oarsmen-carousel{
+    width:100%;
+    height: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:5%;
+}
+.oarsmen-carousel-wrapper{
+    width: 60%;
+    height: 100%;
+    background-color: black;
+}
+.oarsmen-heading{
+    text-align: center;
+    font-size:3.5rem;
+    font-weight: 700;
+    color:white
+}
+.oarsmen-carousel .carousel .carousel-control-prev,.oarsmen-carousel .carousel .carousel-control-next{
+    display:block;
+    position: absolute;
+    top:10%;
+    /* bottom:1%    ; */
+}
+.oarsmen-carousel .carousel{
+    /* width:60%; */
+    width:100%;
+    height: 100%;
+    /* padding:2rem; */
+}
+.oarsmen-carousel-wrapper .carousel .carousel-indicators{
+    position: absolute;
+    top:38%;
+}
+.oarsmen-carousel-wrapper .carousel .carousel-indicators button{
+    width:15px;
+    height: 15px;
+    border-radius:50%;
+    /* background-color: red; */
+}
+.carousel-inner{
+    width:100%;
+    height: 100%;
+}
+.item-oars{
+    width:100%;
+    height: 100%;
+}
+.item-img-carousel{
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.item-img{
+    min-width:400px;
+    max-width:60%;
+    /* height: 60%; */
+    /* padding:10rem; */
+}
+.caption-wrapper{
+    height: 100%;
+    width: 100%;
+    overflow: visible;
+    padding:2rem;
+}
+.oarsmen-carousel .carousel .carousel-inner .item-oars .carousel-caption{
+    /* position: relative; */
+    left:0;
+    width:100%;
+    position:absolute;
+    top:40%;
+}
+.item-name{
+    padding:0 0 1rem 0;
+}
+.item-p{
+    padding:1rem;
+    height: 100%;
+}
+/* .oars-carousel{
+    position: relative;
+    width: 100%;
+    height:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.carousel-wrapper{
+    display:flex;
+    overflow: hidden;
+    /* max-width:50rem; q */
+    /* width: 100%; */
+/* }
+.item-card{
+    
+}
+.item-card{
+    width:100%;
+}
+.item-card-image{
+    width:100%;
+}
+.oars-image{
+    width:100%;
+} */ 
+
+@media screen and (max-width:800px){
+    .oarsmen-carousel .carousel{
+        width:100%;
+        height: 100%;
+    }
+    .oarsmen-carousel-wrapper{
+        width:90%;
+    }
+    .oarsmen-carousel .carousel .carousel-control-prev,.oarsmen-carousel .carousel .carousel-control-next{
+        display: none;
+    }
+    .oarsmen-carousel-wrapper .carousel .carousel-indicators{
+        top:30%;
+    }
+    .oarsmen-carousel .carousel .carousel-inner .item-oars .carousel-caption{
+        top:35%;
+        font-size:2.3vw;
+    }
+}

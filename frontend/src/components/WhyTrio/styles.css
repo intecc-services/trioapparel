@@ -1,0 +1,111 @@
+/* Why Trio */
+.whyTrio{
+    padding:2rem 0;
+}
+.why-heading{
+    font-size:3rem;
+    font-weight:600;
+    padding:0 6rem;
+}
+.why-subhead{
+    font-weight: 500;
+    padding:2rem 6rem;
+}
+.part-one-why{
+    /* padding: 2rem 0 2rem 0; */
+    background:linear-gradient(to bottom ,
+    white 0%,
+    white 70%,
+    black 70%,
+    black 100%);
+}
+.part-two-why{
+    padding:1rem 6rem;
+    color:white;
+    background-color: black;
+}
+
+/* Part One */
+.part-one{
+    display:flex;
+    width:100%;
+    justify-content: space-between;
+    padding: 0 6rem;
+    font-family:'Poppins';
+}
+.part-one-item{
+    width:100%;
+    padding:1rem 0 1rem 1rem;
+}
+.part-one-item-image{
+    width:100%;
+}
+.img-tag-why-item{
+    width:100%;
+}
+.part-one-item-text{
+    display:flex;
+    width:100%;
+    justify-content: space-between;
+    background-color: white;
+    padding:1rem;
+}
+
+/* Part Two */
+.part-two{
+    width:100%;
+}
+.whytrio-item{
+    display:flex;
+    width:100%;
+    padding:1rem 0;
+}
+.why-item-icon{
+    width:7%;
+}
+.why-item-text{
+    width:93%;
+    font-size:1.1rem;
+    font-family:'Poppins';
+    font-weight:200
+}
+
+@media screen and (max-width:600px){
+    .why-trio{
+    }
+    .part-one{
+        display:block;
+        background-color: black;
+        color:black;
+        padding:0 3rem;
+    }
+    .part-one-why{
+        background-color: black;
+    }
+    .why-subhead{
+        padding:2rem 2rem;
+        text-align: center;
+    }
+    .why-heading{
+        padding:0 2rem;
+        width:100%;
+        text-align:center;
+    }
+    .part-one-item{
+        padding:0;
+    }
+    .whytrio-item{
+        display: block;
+    }
+    .why-item-icon{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .part-two-why{
+        padding: 1rem 3rem;
+        text-align: center;
+    }
+}
+

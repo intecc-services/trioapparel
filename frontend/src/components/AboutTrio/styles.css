@@ -1,5 +1,8 @@
 .heading-about{
+    width:100%;
+    height: 100%;
     position: relative;
+    /* padding:20% 0; */
 }
 .head-content-about{
     text-align: center;
@@ -35,7 +38,20 @@
 .my-carousel{
     padding:3rem 1rem 6rem 1rem;
     border-radius: 20px;
+    width:100%;
 }
+.my-carousel .carousel{
+    /* width:800px; */
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+}
+.my-carousel .carousel .carousel-indicators button{
+    width:20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
 .main-item{
     width:100%;
     position: relative;
@@ -57,8 +73,10 @@
 .main-text{
     font-size:1.3rem;
 }
-.carousel-caption{
+.my-carousel .carousel .carousel-item .carousel-caption{
     top:40%;
+    /* right:0%; */
+    padding:0rem;
 }
 
 /* Info */
@@ -72,27 +90,32 @@
 .flex-item{
     width:100%;
     height:100%;
-    padding:0 2rem;
     position: relative;
 }
 .img-flex-tag{
     border-radius: 20px;
     width:100%;
+    /* height:100%; */
     height:650px;
+    object-fit: fill;
     position: relative;
 }
 .for-overlay-flex,.for-overlay-flex-hover{
-    width:87%;
     /* padding:2rem; */
     position: absolute;
     bottom:0;
     background-color: rgba(0,0,0,0.5);
+    width: 100%;
     height: 100%;
     border-radius: 20px;
     display:flex;
     /* justify-content: center; */
     flex-direction: column;
     transition: 0.5s;
+}
+.flex-wrapper{
+    padding:2%;
+    width:100%;
 }
 .flex-main-head{
     position: relative;
@@ -121,4 +144,104 @@
 .for-overlay-flex-hover{
     background-color: rgba(0,0,0,0.8);
     padding:2rem;
+}
+.heading-resp{
+    display:none;
+}
+
+@media screen and (max-width:600px){
+    .info-box{
+        display:block;
+    }
+    .flex-item{
+        margin:2% 0;
+    }
+    .for-overlay-flex{
+        width:100%;
+    }
+    .about-1{
+        height:30vh;
+    }
+    .about-2{
+        height: 50vh;
+    }
+    .head-image-about{
+        width:100%;
+        height: 100%;
+        padding: 10% 0;
+    }
+    .head-content-about{
+        position: absolute;
+    bottom:35%;
+    font-size: 3rem;
+    }
+    .about-img{
+    height: 100%;
+    }
+    .my-carousel .carousel{
+        position:relative;
+        top:0;
+    }
+    .my-carousel .carousel .carousel-inner{
+        position: absolute;
+        top:0;
+        height: 80%;
+    }
+    .my-carousel .carousel .carousel-indicators{
+        position: absolute;
+        bottom:0;
+    }
+    .my-carousel .carousel .carousel-control-prev,.my-carousel .carousel .carousel-control-next{
+        display: none;
+    }
+    .my-carousel{
+        padding:5% 0;
+        height: 100%;
+        width:100%;
+        position: relative;
+        border-radius: 0%;
+    }
+    .my-carousel .carousel .carousel-inner .carousel-item{
+        width: 100%;
+        height: 100%;
+    }
+    .my-carousel .carousel .carousel-item .carousel-caption{
+        /* position: absolute; */
+        top:10%;
+        padding:1%;
+        right:0%;
+        left:0%;
+    }
+    /* .carousel-caption{
+        top:10%;
+        padding:0%;    
+    } */
+    .main-item{
+        width:100%;
+        height: 100%;
+        object-fit: none;
+        position: relative;
+    }
+    .carousel-img{
+        width:100%;
+        height: 100%;
+    }
+    .my-carousel .carousel .carousel-item .carousel-caption .main-text{
+        font-size: 1rem;
+        padding:2%;
+    }
+    .flex-p2,.flex-p3{
+        font-size: 0.8rem;
+    }
+    .for-overlay-flex{
+        display:none;
+    }
+    .heading-resp{
+        display:flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .flex-main-head{
+        width:100%;
+    }
 }

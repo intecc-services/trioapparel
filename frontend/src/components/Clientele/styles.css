@@ -1,0 +1,77 @@
+.clientele{
+    position:relative;
+    height: 100vh;
+}
+.clientele-bg{
+    position: relative;
+}
+.tag-clientele-pic{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+.overlay-clientele{
+    position:absolute;
+    width:100%;
+    height: 100%;
+    bottom:0;
+    background-color: #030021;
+    opacity: 0.6;
+}
+
+.clientele-main-content{
+    position: absolute;
+    top:0;
+    width:100%;
+    padding:2rem;
+    /* text-align: center; */
+    /* font-size:4rem; */
+}
+.clientele-heading{
+    width:100%;
+    display:flex;
+    justify-content: center;
+    font-size:7vw;
+    font-weight:700;
+    font-family: "Poppins";
+    color:white;
+    padding:2rem 0;
+}
+.clientele-content{
+    display:flex;
+    padding:2rem;
+    width: 100%;
+    background-color: rgba(0,0,0,0.7);
+    border-radius: 10px;
+}
+.clientele-pic{
+    width:100%;
+}
+.clientele1-pic{
+    width:100%;
+    /* padding:1rem; */
+}
+.clientele-text{
+    width:100%;
+    font-size: 2rem;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:4rem;
+    text-align: center;
+}
+
+@media screen and (max-width:600px){
+    .clientele-content{
+        /* display:block; */
+        flex-direction: column-reverse;
+    }
+    .clientele-text{
+        padding:10% 0 0 0;
+        font-size:1.3rem
+    }
+    .clientele-pic{
+        padding:30% 0 10% 0;
+    }
+}

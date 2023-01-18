@@ -1,6 +1,9 @@
 .our-products{
     background-color: black;
-    padding: 0 0 5rem 0;
+    /* padding: 0 0 5rem 0; */
+    position: relative;
+    width:100%;
+    /* height: 100vh; */
 }
 
 /* Products Heading */
@@ -36,16 +39,18 @@
 /* Info */
 .info-our-products{
     width:100%;
-    height: 100%;
+    /* height: 100vh; */
     position: relative;
     /* background-image: url('./bg3.png'); */
 }
 .info-image{
     width:100%;
+    height: 100vh;
     position: relative;
 }
 .img-info-tag{
     width:100%;
+    height: 100vh;
 }
 .overlay-info{
     position: absolute;
@@ -57,15 +62,18 @@
 .info-content{
     position: absolute;
     z-index:90;
-    bottom:0;
+    top:0;
     width:100%;
-    height: 100%;
+    height: auto;
     /* padding:1rem; */
 }
 .info-image-content{
     display:flex;
     /* padding:0rem 1rem 0 0; */
     width:100%;
+    position: relative;
+    top:0;
+    height:100%;
     justify-content: space-around;
     /* background-color: red; */
     z-index:99;
@@ -77,16 +85,17 @@
     padding:4rem 1rem;
 }
 .img-mains{
-    width:100%;
-    height: 100%;
+    width:60%;
+    height: 50%;
     position: relative;
     display:flex;
     justify-content: center;
 }
 .img-tag-info{
-    width:80%;
+    width:100%;
     height: 100%;
     position: relative;
+    object-fit: contain;
 }
 .img-content{
     width:auto;
@@ -107,15 +116,18 @@
 .info-content-main{
     font-family: 'Poppins';
     font-size:1.2rem;
+    height: 100%;
+    /* position: relative; */
     /* background-color: red; */
-    padding: 4rem 0;
-    background-image: linear-gradient(to bottom,rgba(0,0,0,0),rgba(0,0,0,0.8));
+    /* padding: 4% 0; */
+    background-image: linear-gradient(to bottom,rgba(0,0,0,0),rgba(0,0,0,1));
     z-index:99;
 }
 .info-part-1{
     display:flex;
     justify-content: space-around;
     width:100%;
+    height: 100%;
     color:#D9A938;
 }
 .info-part-1-1,.info-part-1-2{
@@ -129,4 +141,34 @@
     color:white;
     text-align: center;
     padding:1rem;
+}
+
+@media screen and (max-width:600px){
+    .img-mains{
+        width:100%;
+        height: 100%;
+    }
+    .img-content{
+        width: 100%;
+        height: 20%;
+        font-size:1rem;
+    }
+    .images-info{
+        padding:2rem 1%;
+    }
+    .info-content-main{
+        padding:0 2%;
+    }
+    .info-part-1{
+        display:block
+    }
+    .info-part-1-1,.info-part-1-2{
+        padding :1rem  0;
+    }
+    .info-part-2,.info-part-3,.info-part-4{
+        font-size:1rem
+    }
+    .info-part-2{
+        padding:4rem 0 2rem 0;
+    }
 }

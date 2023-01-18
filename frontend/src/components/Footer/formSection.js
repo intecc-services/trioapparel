@@ -1,64 +1,85 @@
-import React from 'react'
-import './styles.css'
-import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
-
-
+import React from "react";
+import "./styles.css";
+import Button from "react-bootstrap/Button";
+import Card from "react-bootstrap/Card";
+import { IoLogoWhatsapp } from "react-icons/io";
+import { BsWhatsapp } from "react-icons/bs";
 
 function FormSection() {
-    return (
-        <div>
-            <div className='form-section'>
-                <img src="/images/footer.png" className='footer-image'></img>
-                <div className='FooterText'>
-                    <h1 style={{ fontWeight: "800", lineHeight: "108.23px", fontSize: "4rem" }}>Apply now</h1>
-                    <h1 style={{ fontWeight: "800", fontSize: "4rem" }}>for TRIO</h1>
-                </div>
-                <div className="card-section">
-                    <Card className="form-card" style={{
-                        width: '30rem',
-                        height: "29rem",
-                        backgroundColor: "rgba(255, 255, 255, 0.6)",
-                        opacity: "0.8"
-                    }}>
+  return (
+    <div>
+      <div className="form-section">
+        <img src="/images/footer.png" className="footer-image"></img>
+        <div className="footer-overlay"></div>
+        <div className="footer-section-content-main">
+          <div className="footer-section-content">
+            <div className="FooterText">
+              <h1 className="apply-now">Apply now</h1>
+              <h1 className="for-trio">for TRIO</h1>
+            </div>
+            <div className="card-section">
+              <Card className="form-card">
+                <Card.Body>
+                  <div>
+                    <form>
+                      <input
+                        className="input-fields"
+                        type="text"
+                        placeholder="enter your name"
+                      />
+                      <br />
+                      <br />
+                      <input
+                        className="input-fields"
+                        type="email"
+                        placeholder="enter your Email"
+                      />
+                      <br />
+                      <br />
+                      <input
+                        className="input-fields"
+                        type="text"
+                        placeholder="enter your number"
+                      />
+                      <br />
+                      <br />
+                      <textarea
+                        className="text-area"
+                        placeholder="Write a comment"
+                      />
+                    </form>
+                  </div>
+                  <Button variant="outline-dark" className="form-button">
+                    Clear
+                  </Button>
+                  <Button variant="dark" className="form-button">
+                    Submit
+                  </Button>
+                </Card.Body>
+              </Card>
+            </div>
+          </div>
+          <div className="contactInfoContainer">
+            <div className="image">
+              <div className="whatsapp-image-div">
+                <img src="/images/whatsapp.png" className="whatsapp-icon" />
+              </div>
+              {/* <BsWhatsapp color={"white"} className='whatsapp-icon'/> */}
+              <div className="whatsapp-contact">345554113 4135</div>
+            </div>
 
-                        <Card.Body>
-                            <div>
-                                <form>
-                                    <input className='input-fields' type="text" placeholder='enter your name' />
-                                    <br />
-                                    <br />
-                                    <input className='input-fields' type="email" placeholder='enter your Email' />
-                                    <br />
-                                    <br />
-                                    <input className='input-fields' type="text" placeholder='enter your number' />
-                                    <br />
-                                    <br />
-                                    <textarea className='text-area' placeholder='Write a comment' />
-                                </form>
-                            </div>
-                            <Button variant="outline-dark" style={{backgroundColor:"white",marginTop: "5%",padding:"0",marginRight:"3%",fontWeight:"500",fontSize:"20px", width:"30%",height:"10%"}}>Clear</Button>
-                            <Button variant="dark"style={{marginTop: "5%",padding:"0",marginRight:"3%",fontWeight:"500",fontSize:"20px", width:"30%",height:"10%"}}>Submit</Button>
-                        </Card.Body>
-                    </Card>
-                </div>
+            <div className="email">
+              <h2 className="email-footer-sec">Email: </h2>
+              <h6 className="footer-text-sec">trioapparels2011@gmail.com</h6>
+              <h6 className="footer-text-sec">sreenath.trioapparels@gmail.com</h6>
             </div>
-            <div className='contactInfoContainer' style={{backgroundColor:"black",height:"10rem"}} >
-                <div className='image'>
-                    <img src="/images/whatsapp.png" style={{paddingRight:"3%"}}/>
-                    <h2>345554113 4135</h2>
-                </div>
-             
-                <div className='email'>
-                    <h2>Email: </h2>
-                    <h6>trioapparels2011@gmail.com</h6>
-                    <h6>sreenath.trioapparels@gmail.com</h6>
-                </div>
-                <div className='fax'>
-                    <h2>Ph No/Fax: +91-80-4113 4135</h2>
-                </div>
+            <div className="fax">
+              <h2 className="fax-heading">Ph No/Fax: <span className="fax-contact">+91-80-4113 4135</span></h2>
             </div>
+          </div>
         </div>
-    );
+      </div>
+    </div>
+  );
 }
 export default FormSection;
