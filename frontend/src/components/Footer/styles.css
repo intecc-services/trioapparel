@@ -3,42 +3,92 @@
 .form-section {
     position: relative;
     display: flex;
-    height: 600px;
+    height: 100vh;
 }
 
 .footer-image {
     overflow: hidden;
     position: relative;
+    height: 100%;
     width: 100%;
-    object-fit: fit;
+    object-fit: fill;
+    /* width: 100%; */
+    /* object-fit: fit; */
 }
 
+.footer-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    top: 0;
+}
+
+.footer-section-content-main{
+    position: absolute;
+    top:0;
+    width:100%;
+    height: 100%;
+    /* display:flex; */
+    /* justify-content: space-between; */
+}
+.footer-section-content{
+    display:flex;
+    height: 80%;
+}
 .FooterText {
-    display: flex;
-    flex-direction: column;
     padding: 10%;
     color: white;
     font-family: "Poppins";
-    position: absolute;
+    width: 100%;
+    text-align: center;
+    /* position: absolute; */
 
 }
 
-h1 {
+.apply-now {
+    font-weight: 800;
+    /* line-height: 108.23px; */
+    font-size: 5vw;
+    width:100%;
+}
+.for-trio{
+    font-weight: 800;
+    font-size:7vw
+}
+/* h1 {
     font-size: x-large;
     font-weight: bolder;
-}
+} */
 
 .card-section {
-    display: flex;
-    flex-direction: column;
+    width:100%;
+    /* height: 100%; */
+    /* display: flex; */
+    /* flex-direction: column; */
     padding: 5%;
-    right: 0;
-    position: absolute;
+    /* right: 0; */
+    /* position: absolute; */
 
 }
 
+.form-card{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.6);
+    opacity: 0.8;
+}
+.form-button{
+    background-color: "white";
+    margin-top: 5%;
+    padding: 0;
+    margin-right: 3%;
+    font-weight: 500;
+    font-size: 20px;
+    width: 30%;
+    height: 10%;
+}
 .card {
-
     text-align: center;
 }
 
@@ -71,24 +121,50 @@ h1 {
 }
 
 
-.contactInfoConatiner {
+.contactInfoContainer {
     background-color: black;
-
+    /* height: auto; */
+    height: 20%;  
+    z-index: 99;
+    display: flex;
+    /* padding:4%; */
 }
 
 .image {
     float: left;
-    width: 25%;
+    width: 100%;
+    /* height: 100%; */
     display: flex;
+    /* justify-content: center; */
+    align-items: center;
     color: white;
-    padding-top: 2%;
+    /* padding-top: 2%; */
     padding-left: 2%;
     font-family: "Poppins";
 }
 
+.whatsapp-image-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.whatsapp-icon {
+    /* background-color: #1FAF38; */
+    width: 50px;
+    height: 50px;
+}
+
+.whatsapp-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2rem;
+}
+
 .email {
+    width: 100%;
     float: left;
-    width: 40%;
     color: white;
     font-family: "Poppins";
     text-align: center;
@@ -101,38 +177,129 @@ h1 {
     font-family: "Poppins";
     padding-right: 2%;
     padding-top: 2%;
+    width: 100%;
 }
 
 
 /* css for footerDetails */
 
+.contactInfoContainer2 {
+    display: flex;
+    z-index: 99;
+}
+
 .gMap {
-    float: left;
-    width: 30%;
+    /* float: left; */
+    /* width: 30%; */
+    width: 100%;
     padding-top: 2%;
     padding-left: 2%;
     font-family: "Poppins";
 }
 
 .regOffice {
-    float: left;
-    width: 33%;
-
+    /* float: left; */
+    /* width: 33%; */
+    width: 100%;
     font-family: "Poppins";
     text-align: center;
-    padding-top: 2%;
+    padding: 2rem 4rem;
 }
 
 .branchOffice {
-    float: right;
+    /* float: right; */
+    width: 100%;
     text-align: center;
     font-family: "Poppins";
     padding-right: 2%;
     padding-top: 2%;
 }
 
-a{
+.footer-a {
     font-size: 1rem;
     color: black !important;
     text-decoration: none !important;
+}
+.footer-extra-links{
+    display:flex;
+    justify-content: center;
+    padding-top:25%;
+    width: 100%;
+}
+.footer-extra-links-wrapper{
+    padding:2%;
+}
+.footer-icon-wrapper{
+    padding:20%;
+    width:40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 50%;
+}
+.icon-main{
+    color:black;
+}
+@media screen and (max-width:600px){
+    .footer-section-content{
+        display:block;
+    }
+    .FooterText{
+        padding:5% 10% 0 10%;
+    }
+    .contactInfoContainer{
+        display: block;
+    }
+    .footer-image{
+        height: 100vh;
+    }
+    .footer-overlay{
+        height: 100vh;
+    }
+    .image{
+        display: none;
+    }
+    .email-footer-sec{
+        font-weight:700;
+    }
+    .footer-text-sec{
+        color:#4FDFFF;
+    }
+    .fax{
+        text-align: center;
+    }
+    .contactInfoContainer{
+        background:none;
+    }
+    .contactInfoContainer2{
+        display: block;
+        background-color: black;
+    }
+    .gMap{
+        text-align: center;
+    }
+    .gMap-font-color{
+        color:white;
+    }
+    .regOffice,.branch-office,.branch-addr{
+        display: none;
+    }
+    .branch-office{
+        padding:0;
+    }
+    .footer-extra-links{
+        padding:1%;
+        color:white
+    }
+    .fax{
+        padding:5% 0 0 0;
+    }
+    .fax-heading{
+        font-size:4vw;
+    }
+    .fax-contact{
+        color:#4FDFFF;
+    }
 }

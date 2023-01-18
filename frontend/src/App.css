@@ -5,10 +5,71 @@
     margin:0;
     padding:0;
 }
-
+.navbar-mobile{
+    display:none;
+}
 .sectionOne{
     padding:2rem 4rem;
 }
 .sectionOneStrip{
     padding:4rem;
 }
+.section-one-contact-resp{
+    display:none;
+}
+.our-products{
+    width:100%;
+    /* height: 1000px; */
+}
+.our-products-2{
+    height: 100vh;
+    background-color: black;
+    background: url('./bg3.png') rgba(0,0,0,0.5);
+    /* margin:10% 0; */
+}
+.about-trio{
+    width:100%;
+    /* height: 100vh; */
+    /* padding:10% 0 */
+    /* position: relative; */
+}
+
+.infrastructure{
+    background-color: white;
+}
+@media screen and (max-width:600px){
+    .navbar-main{
+        display:none;
+    }
+    .navbar-mobile{
+        display:block;
+        background-color: black;
+    }
+    .sectionOne{
+        padding:0;
+        border-radius: 0px;
+    }
+    .sectionOneStrip{
+        padding:0rem 0;
+    }
+    .section-one-contact-resp{
+        display:flex;
+        /* height: 100px; */
+        width:100%;
+    }
+    .our-products-2{
+        background-color: black;
+        background-image: none;
+    }
+    .about-trio{
+        background-color: black;
+    }
+    .why-trio{
+        background-color: black;
+        color:white;
+    }
+    .infrastructure{
+        background-color: black;
+    }
+}
+

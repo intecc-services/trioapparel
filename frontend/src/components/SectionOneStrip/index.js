@@ -12,7 +12,7 @@ const SectionOneStrip = () => {
             <FaGlobe color="white" size={"1.5rem"} />
           </span>
         </div>
-        <div className="icon-content">Top Brands</div>
+        <div className="icon-content">TOP BRANDS</div>
       </div>
       <div className="strip-1-content">
         <div className="strip-icon">
@@ -20,7 +20,7 @@ const SectionOneStrip = () => {
             <FaGlobe color="white" size={"1.5rem"} />
           </span>
         </div>
-        <div className="icon-content">Top Brands</div>
+        <div className="icon-content">BEST SERVICES</div>
       </div>
       <div className="strip-1-content">
         <div className="strip-icon">
@@ -28,7 +28,7 @@ const SectionOneStrip = () => {
             <FaGlobe color="white" size={"1.5rem"} />
           </span>
         </div>
-        <div className="icon-content">Top Brands</div>
+        <div className="icon-content">LARGE COLLECTION</div>
       </div>
       <div className="strip-1-content">
         <div className="strip-icon">
@@ -36,7 +36,7 @@ const SectionOneStrip = () => {
             <FaGlobe color="white" size={"1.5rem"} />
           </span>
         </div>
-        <div className="icon-content">Top Brands</div>
+        <div className="icon-content">HIGH TECH</div>
       </div>
       <div className="strip-1-content">
         <div className="strip-icon">
@@ -44,15 +44,7 @@ const SectionOneStrip = () => {
             <FaGlobe color="white" size={"1.5rem"} />
           </span>
         </div>
-        <div className="icon-content">Top Brands</div>
-      </div>
-      <div className="strip-1-content">
-        <div className="strip-icon">
-          <span className="fill-icon">
-            <FaGlobe color="white" size={"1.5rem"} />
-          </span>
-        </div>
-        <div className="icon-content">Top Brands</div>
+        <div className="icon-content">TRUSTED BRANDS</div>
       </div>
     </div>
   );

@@ -15,7 +15,7 @@ const MyCarousel = () => {
             return <Carousel.Item>
             <div className="main-item">
               <img
-                className="d-block w-100 carousel-img"
+                className="carousel-img"
                 src={item.image}
                 alt="First slide"
               />
