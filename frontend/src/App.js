@@ -3,20 +3,17 @@ import AboutTrio from "./components/AboutTrio";
 import Info from "./components/OurProducts/Info";
 import Clientele from "./components/Clientele";
 import Footer from "./components/Footer";
-import ImgSlider from "./components/ImgSlider";
 import Infrastructure from "./components/Infrastructure";
 import Oarsmen from "./components/Oarsmen";
 import OurProducts from "./components/OurProducts";
-import OurProducts2 from "./components/OurProducts/OurProducts2";
 import SectionOne from "./components/SectionOne";
 import SectionOneStrip from "./components/SectionOneStrip";
 import WhyTrio from "./components/WhyTrio";
 import Navbar from "./components/navbar";
-import "bootstrap/dist/css/bootstrap.min.css";
-import { MdStar } from "react-icons/md";
-import { BsShieldFillCheck } from "react-icons/bs";
 import SectionOneContact from "./components/SectionOne/SectionOneContact";
 import NavbarMobile from "./components/navbar/NavbarMobile";
+
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   return (
@@ -39,14 +36,14 @@ function App() {
       <div className="our-products-2">
         <Info/>
       </div>
-      <div className="about-trio">
+      <div className="about-trio" id='aboutus'>
         <AboutTrio />
       </div>
       <div className="why-trio">
         <WhyTrio />
       </div>
       <div className="infrastructure">
-        {/* <Infrastructure /> */}
+        <Infrastructure />
       </div>
       <div className="oarsmen-main">
         <Oarsmen />

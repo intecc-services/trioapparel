@@ -5,16 +5,14 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <div className="brand">
-        <div>
-
-        </div>
         <div className="brand-name">
-          TRIO APPARELS
+          <div className="brand-logo"></div>
+          <div className="brand-main">TRIO APPARELS</div>
         </div>
       </div>
       <div className="navContent">
         <div className="nav-part">
-          <NavLink to="/" className="link-about-us">
+          <NavLink to="#aboutus" className="link-about-us">
             About us
           </NavLink>
         </div>

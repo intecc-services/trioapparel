@@ -3,13 +3,16 @@ import { RiLuggageCartFill } from "react-icons/ri";
 export const navbarContents = ['About us','Product','Clientele','Careers']
 
 export const images = [
-  "/images/img1.svg",
-  "/images/img1.svg",
-  "/images/img1.svg",
-  "/images/img1.svg",
-  "/images/img1.svg",
-  "/images/img1.svg",
-  "/images/img1.svg",
+  "/images/our-products-car-1.png",
+  "/images/our-products-car-2.png",
+  "/images/our-products-car-3.png",
+  "/images/our-products-car-4.png",
+  "/images/our-products-car-5.png",
+  "/images/our-products-car-6.png",
+  "/images/our-products-car-7.png",
+  "/images/our-products-car-8.png",
+  "/images/our-products-car-9.png",
+
 ];
 
 export const carousel1 = [
