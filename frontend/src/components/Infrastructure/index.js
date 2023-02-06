@@ -54,14 +54,14 @@ const Infrastructure = () => {
 
         <div className="infra-text">
           <div className="infra-text-wrap">
-            Area Covered: 32,000 Sq. ft. Total No. of Machines: 320 Machines
+            <span className="infra-span">Area Covered:</span> 32,000 Sq. ft.<br/> 
+            <span className="infra-span">Total No. of Machines:</span> 320 Machines
             <br />
-            Special Machines: Single Needle UBT Machines, Collar & Cuff Turning,
-            <br />
-            Pocket Welt, Button Wrapping, Needle Detector Product Manufactured:
-            <br />
-            Readymade Woven Shirts - for Men, Boys and Kids Capacity: 70000
-            <br />
+            <span className="infra-span">Special Machines:</span> Single Needle UBT Machines, Collar & Cuff Turning,
+            Pocket Welt, Button Wrapping, Needle Detector <br/>
+            <span className="infra-span">Product Manufactured:</span>
+            Readymade Woven Shirts - for Men, Boys and Kids <br/>
+            <span className="infra-span">Capacity:</span> 70000
             Garments per month
             <br />
           </div>
