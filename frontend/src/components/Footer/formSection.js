@@ -1,11 +1,44 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./styles.css";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { BsWhatsapp } from "react-icons/bs";
+import emailjs from 'emailjs-com'
 
 function FormSection() {
+  const [formData, setFormData] = useState({});
+ 
+  useEffect(() => {
+    const data = JSON.parse(localStorage.getItem("formData"));
+    if (data) {
+      setFormData(data);
+    }
+  }, []);
+
+  const handleChange = (event) => {
+    setFormData({
+      ...formData,
+      [event.target.name]: event.target.value
+    });
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    localStorage.setItem("formData", JSON.stringify(formData));    
+    console.log(formData['email'])
+    var templateparam = {
+      name : formData['name'],
+      email : formData['email']
+    };
+    emailjs.send('XXXXX', 'XXXXXXX', templateparam, 'XXXXXX' )
+    .then(function(response) {
+      console.log('SUCCESS!', response.status, response.text);
+    }, function(error) {
+      console.log('FAILED...', error);
+    });
+  };
+  
   return (
     <div>
       <div className="form-section">
@@ -26,6 +59,9 @@ function FormSection() {
                         className="input-fields"
                         type="text"
                         placeholder="enter your name"
+                        name="name"
+                        value = {formData.name || ""}
+                        onChange={handleChange}
                       />
                       <br />
                       <br />
@@ -33,6 +69,9 @@ function FormSection() {
                         className="input-fields"
                         type="email"
                         placeholder="enter your Email"
+                        name="email"
+                        value = {formData.email || ""}
+                        onChange={handleChange}
                       />
                       <br />
                       <br />
@@ -47,14 +86,16 @@ function FormSection() {
                         className="text-area"
                         placeholder="Write a comment"
                       />
-                    </form>
-                  </div>
-                  <Button variant="outline-dark" className="form-button">
+                    <Button variant="outline-dark" className="form-button">
                     Clear
                   </Button>
-                  <Button variant="dark" className="form-button">
+                 
+                  <Button onClick={handleSubmit} variant="dark" className="form-button">
                     Submit
                   </Button>
+                    </form>
+                  </div>
+                  
                 </Card.Body>
               </Card>
             </div>
