@@ -1,16 +1,16 @@
-import React, { useState, useEffect } from "react";
-import "./styles.css";
-import Button from "react-bootstrap/Button";
-import Card from "react-bootstrap/Card";
-import { IoLogoWhatsapp } from "react-icons/io";
-import { BsWhatsapp } from "react-icons/bs";
-import emailjs from 'emailjs-com'
+import React, { useState, useEffect } from 'react';
+import './styles.css';
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
+import { IoLogoWhatsapp } from 'react-icons/io';
+import { BsWhatsapp } from 'react-icons/bs';
+import emailjs from 'emailjs-com';
 
 function FormSection() {
   const [formData, setFormData] = useState({});
- 
+
   useEffect(() => {
-    const data = JSON.parse(localStorage.getItem("formData"));
+    const data = JSON.parse(localStorage.getItem('formData'));
     if (data) {
       setFormData(data);
     }
@@ -19,26 +19,28 @@ function FormSection() {
   const handleChange = (event) => {
     setFormData({
       ...formData,
-      [event.target.name]: event.target.value
+      [event.target.name]: event.target.value,
     });
   };
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    localStorage.setItem("formData", JSON.stringify(formData));    
-    console.log(formData['email'])
+    localStorage.setItem('formData', JSON.stringify(formData));
+    console.log(formData['email']);
     var templateparam = {
-      name : formData['name'],
-      email : formData['email']
+      name: formData['name'],
+      email: formData['email'],
     };
-    emailjs.send('XXXXX', 'XXXXXXX', templateparam, 'XXXXXX' )
-    .then(function(response) {
-      console.log('SUCCESS!', response.status, response.text);
-    }, function(error) {
-      console.log('FAILED...', error);
-    });
+    emailjs.send('XXXXX', 'XXXXXXX', templateparam, 'XXXXXX').then(
+      function (response) {
+        console.log('SUCCESS!', response.status, response.text);
+      },
+      function (error) {
+        console.log('FAILED...', error);
+      }
+    );
   };
-  
+
   return (
     <div>
       <div className="form-section">
@@ -60,7 +62,7 @@ function FormSection() {
                         type="text"
                         placeholder="enter your name"
                         name="name"
-                        value = {formData.name || ""}
+                        value={formData.name || ''}
                         onChange={handleChange}
                       />
                       <br />
@@ -70,7 +72,7 @@ function FormSection() {
                         type="email"
                         placeholder="enter your Email"
                         name="email"
-                        value = {formData.email || ""}
+                        value={formData.email || ''}
                         onChange={handleChange}
                       />
                       <br />
@@ -86,16 +88,19 @@ function FormSection() {
                         className="text-area"
                         placeholder="Write a comment"
                       />
-                    <Button variant="outline-dark" className="form-button">
-                    Clear
-                  </Button>
-                 
-                  <Button onClick={handleSubmit} variant="dark" className="form-button">
-                    Submit
-                  </Button>
+                      <Button variant="outline-dark" className="form-button">
+                        Clear
+                      </Button>
+
+                      <Button
+                        onClick={handleSubmit}
+                        variant="dark"
+                        className="form-button"
+                      >
+                        Submit
+                      </Button>
                     </form>
                   </div>
-                  
                 </Card.Body>
               </Card>
             </div>
@@ -112,10 +117,14 @@ function FormSection() {
             <div className="email">
               <h2 className="email-footer-sec">Email: </h2>
               <h6 className="footer-text-sec">trioapparels2011@gmail.com</h6>
-              <h6 className="footer-text-sec">sreenath.trioapparels@gmail.com</h6>
+              <h6 className="footer-text-sec">
+                sreenath.trioapparels@gmail.com
+              </h6>
             </div>
             <div className="fax">
-              <h2 className="fax-heading">Ph No/Fax: <span className="fax-contact">+91-80-4113 4135</span></h2>
+              <h2 className="fax-heading">
+                Ph No/Fax: <span className="fax-contact">+91-80-4113 4135</span>
+              </h2>
             </div>
           </div>
         </div>
