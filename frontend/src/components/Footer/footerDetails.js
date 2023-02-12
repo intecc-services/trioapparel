@@ -9,6 +9,7 @@ function FooterDetails() {
     <div className="contactInfoContainer2">
       <div className="gMap">
         <iframe
+          title="google map"
           style={{ paddingBottom: '20px' }}
           width="500"
           height="300"
@@ -17,7 +18,7 @@ function FooterDetails() {
           marginheight="0"
           marginwidth="0"
           id="gmap_canvas"
-          src="https://maps.google.com/maps?width=382&amp;height=297&amp;hl=en&amp;q=VHBCS%20Layout,%203rd%20Cross,%20West%20of%20Chord%20Road,%20Bengaluru%20-%20560086%20Karnataka%20State,%20INDIA.%20Bengaluru%20+(Location)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+          src="https://maps.google.com/maps?width=382&amp;height=297&amp;hl=en&amp;q=TRIO%20APPARELS,%20Hosapalaya,%20Muneshwara%20Nagar,%20Bengaluru,%20Karnataka%20560068%20Bengaluru%20+(Location)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
         ></iframe>
 
         <h6 className="gMap-font-color">
