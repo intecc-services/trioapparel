@@ -11,7 +11,7 @@ function FooterDetails() {
         <iframe
           title="google map"
           style={{ paddingBottom: '20px' }}
-          width="500"
+          width="300"
           height="300"
           frameborder="0"
           scrolling="no"
@@ -41,16 +41,16 @@ function FooterDetails() {
           INDIA.
         </h6>
         <div style={{ paddingTop: '20%' }}>
-          <a className="footer-a" href="">
+          <a className="footer-a" href="/">
             Home
           </a>{' '}
           |
-          <a className="footer-a" href="">
+          <a className="footer-a" href="/">
             {' '}
             About Us{' '}
           </a>
           |
-          <a className="footer-a" href="">
+          <a className="footer-a" href="/">
             {' '}
             Product
           </a>
@@ -69,21 +69,21 @@ function FooterDetails() {
         </h6>
         <div className="footer-extra-links">
           <div className="footer-extra-links-wrapper">
-            <a href="" className="footer-icons">
+            <a href="/" className="footer-icons">
               <div className="footer-icon-wrapper">
                 <ImFacebook className="icon-main" />
               </div>
             </a>
           </div>
           <div className="footer-extra-links-wrapper">
-            <a href="" className="footer-icons">
+            <a href="/" className="footer-icons">
               <div className="footer-icon-wrapper">
                 <TfiLinkedin className="icon-main" />
               </div>
             </a>
           </div>
           <div className="footer-extra-links-wrapper">
-            <a href="" className="footer-icons">
+            <a href="/" className="footer-icons">
               <div className="footer-icon-wrapper">
                 <SiTwitter className="icon-main" />
               </div>
