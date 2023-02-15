@@ -31,13 +31,17 @@ function FormSection() {
       name : formData['name'],
       email : formData['email']
     };
-    emailjs.send('XXXXX', 'XXXXXXX', templateparam, 'XXXXXX' )
-    .then(function(response) {
+    emailjs.send("service_lf5lnej","template_ek750cd", templateparam, 'O6ffblOqPJKS8EoIE' )
+        .then(function(response) {
       console.log('SUCCESS!', response.status, response.text);
     }, function(error) {
       console.log('FAILED...', error);
     });
   };
+
+  const handleClear = ()=>{
+    setFormData({})
+  }
   
   return (
     <div>
@@ -79,14 +83,20 @@ function FormSection() {
                         className="input-fields"
                         type="text"
                         placeholder="enter your number"
+                        onChange={handleChange}
+                        name = "number"
+                        value = {formData.number || ""}
                       />
                       <br />
                       <br />
                       <textarea
                         className="text-area"
                         placeholder="Write a comment"
+                        value={formData.comment || ""}
+                        onChange = {handleChange}
+                        name = "comment"
                       />
-                    <Button variant="outline-dark" className="form-button">
+                    <Button variant="outline-dark" className="form-button" onClick={handleClear}>
                     Clear
                   </Button>
                  
