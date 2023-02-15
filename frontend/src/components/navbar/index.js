@@ -1,6 +1,6 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
-import "./styles.css";
+import React from 'react';
+import { NavLink } from 'react-router-dom';
+import './styles.css';
 const Navbar = () => {
   return (
     <div className="navbar">
@@ -12,7 +12,7 @@ const Navbar = () => {
       </div>
       <div className="navContent">
         <div className="nav-part">
-          <NavLink to="#aboutus" className="link-about-us">
+          <NavLink to="/aboutus" className="link-about-us">
             About us
           </NavLink>
         </div>

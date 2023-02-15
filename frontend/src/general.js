@@ -1,6 +1,12 @@
 import { RiLuggageCartFill } from 'react-icons/ri';
 
-export const navbarContents = ['About us', 'Product', 'Clientele', 'Careers'];
+export const navbarContents = [
+  'About us',
+  'Product',
+  'Clientele',
+  'Careers',
+  'Infrastructure',
+];
 
 export const images = [
   '/images/our-products-car-1.png',
