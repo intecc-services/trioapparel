@@ -14,6 +14,7 @@ import SectionOneContact from "./components/SectionOne/SectionOneContact";
 import NavbarMobile from "./components/navbar/NavbarMobile";
 
 import "bootstrap/dist/css/bootstrap.min.css";
+import Product from "./components/Product";
 
 function App() {
   return (
@@ -24,15 +25,24 @@ function App() {
       <div className="sectionOne">
         <SectionOne />
       </div>
+
       <div className="sectionOneStrip">
         <SectionOneStrip />
         <div className="section-one-contact-resp">
           <SectionOneContact/>
         </div>
       </div>
+
+      <div>
+        <Product />
+      </div>
+
       <div className="our-products">
         <OurProducts />
       </div>
+
+     
+
       <div className="our-products-2">
         <Info/>
       </div>
