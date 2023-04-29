@@ -1,6 +1,5 @@
 import React from "react";
 import { BsShieldFillCheck } from "react-icons/bs";
-// import {MdStars} from 'react-icons/md'
 import { AiFillStar } from "react-icons/ai";
 import { MdStars } from "react-icons/md";
 

@@ -8,7 +8,7 @@ const Contact = () => {
         <div className="whatsapp-image-div">
           <img src="/images/whatsapp.png" className="whatsapp-icon" />
         </div>
-        <div className="whatsapp-contact">345554113 4135</div>
+        <div className="whatsapp-contact">+91-80-4113 4135</div>
       </div>
 
       <div className="email">
