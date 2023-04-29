@@ -1,9 +1,40 @@
 .infrastructure {
   width: 100%;
-  display: flex;
-  justify-content: space-between;
+  /* display: flex; */
+  /* justify-content: space-between; */
 }
-.infra-1 {
+.infra-bg{
+  width:100%;
+  position: relative;
+}
+.infra-images{
+  column-count: 3;
+  row-gap: 10px;
+}
+.infra-img-tag{
+  width:100%;
+}
+.img-item{
+  width:100%;
+  padding:1% 0;
+}
+.img-item-tag{
+  width:100%;
+}
+.infra-heading{
+  width:100%;
+  position: absolute;
+  top:0;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: rgba(0,0,0,0.7);
+  color:white;
+  font-size:70px;
+  font-weight: 700;
+}
+.infra{
   /* width:100%; */
   height: 100%;
   display: flex;
@@ -12,53 +43,32 @@
 .infra-2 {
   /* width:100%; */
 }
-.infra-heading {
-  display: flex;
-  justify-content: center;
-  font-size: 3rem;
-  font-weight: 600;
-  font-family: 'Poppins';
-}
 .infra-flex {
   display: flex;
   /* height: 100%; */
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center; */
+  /* align-items: center; */
   /* padding: 2rem 1em; */
-  padding: 2rem;
+  /* padding: 2rem; */
 }
-.infra-flex-1,
-.infra-flex-2,
-.infra-flex-3 {
-  /* height: 100%; */
-  /* width:100%; */
+.infra-flex-1{
+  width:100%;
+  padding:4% 4%;
 }
-.infra-img1,
-.infra-img2,
-.infra-img3,
-.infra-img4,
-.infra-img5 {
-  width: 100%;
-  /* height: 100%; */
+.infra-flex-2{
+  width:30%;
+  padding:2%;
 }
-.img-infra-tag1,
-.img-infra-tag2,
-.img-infra-tag3,
-.img-infra-tag4,
-.img-infra-tag5 {
-  width: 100%;
-  height: auto;
-}
-
 .infra-text {
-  padding: 0 2rem;
+  padding: 2% 0;
   font-family: 'Poppins';
   height: 100%;
 }
 .infra-text-wrap {
   color: white;
   background-color: black;
-  padding: 2rem 2rem 4rem 2rem;
+  /* padding: 2rem 2rem 4rem 2rem; */
+  padding: 4%;
   border-radius: 10px;
   font-weight: 200;
 }
@@ -79,19 +89,29 @@
   font-family: 'Poppins';
   border-radius: 20px;
   /* padding:2rem; */
+  padding:2%;
 }
 .infra-2-item {
   color: white;
-  padding: 2.5rem;
+  padding: 5%;
   width: 100%;
   margin: 0.2rem 0;
   /* border: 1px solid white; */
   border-radius: 20px;
   background-color: black;
-  font-size: 1.3rem;
+  font-size: 20px;
 }
 
+.infra-extra-content{
+  display:flex;
+  justify-content: left;
+
+  padding:0 5%;
+}
 @media screen and (max-width: 600px) {
+  .infra-flex{
+    display: block;
+  }
   .infra-heading {
     color: white;
     text-align: center;
@@ -104,7 +124,26 @@
     padding: 0 1rem;
   }
   .infra-text-wrap {
-    padding: 1rem;
-    font-size: 0.8rem;
+    padding: 1%;
+    font-size: 15px;
+  }
+  .infra-2-item{
+    font-size: 7px;
+    border-radius: 10px;
+    width:100%;
+    border:1px solid white;
+    font-size:17px;
+  }
+  .p-tag{
+    font-size:12px;
+  }
+  .infra-flex-2{
+    width:100%;
+  }
+  .infra-2-content{
+    width:90vw;
+  }
+  .infra-flex-2{
+    width:30%;
   }
 }

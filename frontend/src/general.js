@@ -1,11 +1,26 @@
 import { RiLuggageCartFill } from 'react-icons/ri';
 
 export const navbarContents = [
-  'About us',
-  'Product',
-  'Clientele',
-  'Careers',
-  'Infrastructure',
+  {
+    name:'About us',
+    dest:'/aboutus'
+  },
+  {
+    name:'Product',
+    dest:'/product'
+  },
+  {
+    name:'Oarsmen',
+    dest:'/oarsmen'
+  },
+  {
+    name:'Infrastructure',
+    dest:'/infrastructure'
+  },
+  {
+    name:'Why Trio',
+    dest:'/whytrio'
+  }
 ];
 
 export const images = [
@@ -101,13 +116,13 @@ export const whyTrioImages = [
 
 export const oarsmen = [
   {
-    image: '/images/oarsmen1.png',
+    image: '/images/oarsmen/oarsmen3.jpeg',
     name: 'Chandershekar Jagannathan',
     text1:
       'Chandershekar Jagannathan is the Managing Director of Trio Apparels. He is first an Engineer and then an Entrepreneur. He carries with him an experience of a decade having worked with software industry majors like TCS, HCL, EDS. He is credited with identifying the right partners to join him in Trio Apparels to fulfill his father’s vision. As an entrepreneur, Chandershekar is running a profitable construction company, CJN Properties. At Trio Apparels, his major role is overseeing the financial well being of the company.',
   },
   {
-    image: '/images/oarsmen1.png',
+    image: '/images/oarsmen/oarsmen2.jpeg',
     name: 'Madhava Rao Sreenath ',
     text1:
       'Madhava Rao Sreenath is a Commerce Graduate by qualification, but carries with him over 30 years of experience in apparel industry. Sreenath has headed the production in several lead garment manufacturing companies like Creative Group of Companies, Bangalore Clothing Co., Shahi Export House, Zodiac Clothing, Weekender and KK Nag Pvt. Ltd. Sreenath as the Director at Trio Apparels is looking after Marketing and the Production activities of the company and also handling the Systems, Procedures and Implementation.',
@@ -115,23 +130,17 @@ export const oarsmen = [
       "Sreenath's contribution for the growth of Trio is exemplary which is evident by the quick growth of Trio. He is very capable in translating vision into action motivating everyone in the production team. This in turn has helped Trio to meet with the customer’s expectation, producing quality shirts and delivering in time.",
   },
   {
-    image: '/images/oarsmen1.png',
+    image: '/images/oarsmen/oarsmen1.jpeg',
     name: 'Ajaykumar Sreeramalu',
     text1:
       'Ajaykumar Sreeramalu, an Engineer by his educational qualification has a decade’s experience in the sales and service of garments machineries. He has worked with the industry majors like Sunstar Co. Ltd., Harichand Anand Co., Alpine Knits India Pvt. Ltd., MICO, Naganathapura Plant, Brac Engineering Pvt. Ltd., Bangalore. The experience and the technical background Ajaykumar carries with him is a true asset for the trouble free functioning of Trio Apparels. Ajaykumar as the Director in Trio Apparels is taking care of the technical and maintenance aspects of the company. His passion for quality and his special ability to solve problems is a big plus for Trio Apparels.',
   },
   {
-    image: '/images/oarsmen1.png',
+    image: '/images/oarsmen/oarsmen4.jpeg',
     name: 'Saravanan Jaganathan',
     text1:
       'Saravanan Jaganathan, is a Commerce graduate and is mainly focussing on his own business of marketing and distribution of FMCG products. He has to his credit an experience of over over 2 decades of work and business experience. Has served FMCG majors like Nestle India, Britannia Industries etc. Saravanan’s role as a Director of Trio Apparels is non-executive and he is an asset for Trio with his very motivating presence doing its tricks on the workforce to be great contributors. Saravanan regularly conducts motivational and personality development programs that are really helping everyone in the workforce to contribute positively for the productive growth of Trio.',
-  },
-  {
-    image: '/images/oarsmen1.png',
-    name: 'SESHASAYANAM K',
-    text1:
-      'SESHASAYANAM K, is a Civil Engineer and has built a long and illustrious career of over 30 years in various companies using his technical and interpersonal skills. He has worked with many construction companies which has led him to travel across India to oversee projects ranging from society complexes, government offices to reservoirs allowing him to form lasting friendships with many skilled personnel. Maintains excellent communication with team members, monitoring workmanship and efficiency to consistently complete projects within the stipulated time and meet budgetary constraints. In addition, was a successful entrepreneur by exporting Iron Ore and importing various minerals from other countries. In his new role as CEO, he has been able to use his rich experience and network to bag and execute different governmental contracts for TRIO Apparels.',
-  },
+  }
 ];
 
 export const infra = [
@@ -139,7 +148,6 @@ export const infra = [
   'Fabric Checking & Cutting',
   'Sewing/Tailoring Section',
   'Special Facilities',
-  'Design Studio',
   'Embroidery',
   'Showroom',
   'CAD / CAM',
@@ -147,75 +155,69 @@ export const infra = [
 
 export const infraImages = [
   {
-    'Sampling and Inventory Section': [
-      '/images/infra/infra-grid1.png',
-      '/images/infra/infra-grid2.png',
-      '/images/infra/infra-grid3.png',
-      '/images/infra/infra-grid4.png',
-      '/images/infra/infra-grid5.png',
+    name:'Sampling and Inventory Section',
+    images: [
+      '/images/infra/infra5840.JPG',
+      '/images/infra/infra5885.JPG',
+      '/images/infra/infra1.jpg',
+      '/images/infra/infra2.jpg',
+      '/images/infra/infra3.jpg',
+      '/images/infra/infra4.jpg',
     ],
   },
   {
-    'Fabric Checking & Cutting': [
-      '/images/infra/infra-grid1.png',
-      '/images/infra/infra-grid2.png',
-      '/images/infra/infra-grid3.png',
-      '/images/infra/infra-grid4.png',
-      '/images/infra/infra-grid5.png',
+    name:'Fabric Checking & Cutting',
+    images:[
+      '/images/infra/infra5659.JPG',
+      '/images/infra/infra5637.JPG',
+      '/images/infra/infra5636.JPG',
+      '/images/infra/infra5644.JPG',
+      '/images/infra/infra5622.JPG',
+      '/images/infra/infra5626.JPG',
     ],
   },
   {
-    'Sewing/Tailoring Section': [
-      '/images/infra/infra-grid1.png',
-      '/images/infra/infra-grid2.png',
-      '/images/infra/infra-grid3.png',
-      '/images/infra/infra-grid4.png',
-      '/images/infra/infra-grid5.png',
+    name:'Sewing/Tailoring Section',
+    images:[
+      '/images/infra/infra5617.JPG',
+      '/images/infra/infra5694.JPG',
+      '/images/infra/infra5712.JPG',
+      '/images/infra/infra5892.JPG',
     ],
   },
   {
-    'Special Facilities': [
-      '/images/infra/infra-grid1.png',
-      '/images/infra/infra-grid2.png',
-      '/images/infra/infra-grid3.png',
-      '/images/infra/infra-grid4.png',
-      '/images/infra/infra-grid5.png',
+    name:'Special Facilities',
+    images:[
+      '/images/infra/infra5800.JPG',
+      '/images/infra/infra5821.JPG',
+      '/images/infra/infra5849.JPG',
+      '/images/infra/infra5862.JPG',
+      '/images/infra/infra5871.JPG',
+     
     ],
   },
   {
-    'Design Studio': [
-      '/images/infra/infra-grid1.png',
-      '/images/infra/infra-grid2.png',
-      '/images/infra/infra-grid3.png',
-      '/images/infra/infra-grid4.png',
-      '/images/infra/infra-grid5.png',
+   name:'Embroidery',
+   images:[
+      '/images/infra/infra5845.JPG',
+      '/images/infra/infra5847.JPG',
+      '/images/infra/infra5849.JPG',
+      '/images/infra/infra5852.JPG',
     ],
   },
   {
-    Embroidery: [
-      '/images/infra/infra-grid1.png',
-      '/images/infra/infra-grid2.png',
-      '/images/infra/infra-grid3.png',
-      '/images/infra/infra-grid4.png',
-      '/images/infra/infra-grid5.png',
+    name:'Showroom',
+    images:[
+      '/images/infra/infra5753.JPG',
+      '/images/infra/infra5770.JPG',
+      '/images/infra/infra5774.JPG',
+      '/images/infra/infraShowroom.jpeg',
     ],
   },
   {
-    Showroom: [
-      '/images/infra/infra-grid1.png',
-      '/images/infra/infra-grid2.png',
-      '/images/infra/infra-grid3.png',
-      '/images/infra/infra-grid4.png',
-      '/images/infra/infra-grid5.png',
-    ],
-  },
-  {
-    'CAD / CAM': [
-      '/images/our-products-car-1.png',
-      '/images/our-products-car-2.png',
-      '/images/our-products-car-3.png',
-      '/images/our-products-car-4.png',
-      '/images/our-products-car-5.png',
+    name:'CAD / CAM',
+    images:[
+      '/images/infra/infra5774.JPG',
     ],
   },
 ];

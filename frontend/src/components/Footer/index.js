@@ -6,7 +6,6 @@ import FooterDetails from './footerDetails'
 function Footer() {
     return (
         <div>
-            <FormSection />
             <FooterDetails />
         </div>
     );

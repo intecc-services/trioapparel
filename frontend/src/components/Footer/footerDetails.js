@@ -4,9 +4,13 @@ import { TfiLinkedin } from 'react-icons/tfi';
 import { SiTwitter } from 'react-icons/si';
 
 import './styles.css';
+import Contact from './Contact';
 function FooterDetails() {
   return (
-    <div className="contactInfoContainer2">
+    <>
+      <Contact/>
+
+    <div className="contactInfoContainer2" id="contact">
       <div className="gMap">
         <iframe
           title="google map"
@@ -92,6 +96,7 @@ function FooterDetails() {
         </div>
       </div>
     </div>
+    </>
   );
 }
 export default FooterDetails;

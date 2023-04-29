@@ -6,11 +6,6 @@ import MyCarousel from './MyCarousel';
 const Oarsmen = () => {
   return (
     <div className='oarsmen'>
-        <div className='oarsmen-bg'>
-            <img className='oarsmen-bg-tag' src='/images/oarsmen-bg.png' alt='not found'/>
-            <div className='overlay-oarsmen'></div>
-        </div>
-
         <div className='oarsmen-carousel'>
             <MyCarousel/>
         </div>

@@ -95,3 +95,23 @@
     right: -80px;
   }
   
+@media  screen and (max-width:800px) {
+  .product-intro::after{
+    display:none;
+  }
+  .product-image{
+    display:none;
+  }
+  .product-intro{
+    background-color: white;
+    color:black;
+    display:block;
+  }
+  .product-details{
+    font-size:20px;
+  }
+  .product-details-wrapper{
+    width:100%;
+  }
+}
+

@@ -30,6 +30,7 @@ function FormSection() {
     var templateparam = {
       name: formData['name'],
       email: formData['email'],
+      quantity:formData['quantity']
     };
     emailjs.send("service_lf5lnej","template_ek750cd", templateparam, 'O6ffblOqPJKS8EoIE' )
         .then(function(response) {
@@ -85,12 +86,13 @@ function FormSection() {
                       />
                       <br />
                       <br />
-                      <textarea
+                      <input
+                      type='number'
                         className="text-area"
-                        placeholder="Write a comment"
-                        value={formData.comment || ""}
+                        placeholder="Enter Quantity"
+                        value={formData.quantity || 0}
                         onChange = {handleChange}
-                        name = "comment"
+                        name = "quantity"
                       />
                     <Button variant="outline-dark" className="form-button">
                     Clear
@@ -103,28 +105,6 @@ function FormSection() {
                   </div>
                 </Card.Body>
               </Card>
-            </div>
-          </div>
-          <div className="contactInfoContainer">
-            <div className="image">
-              <div className="whatsapp-image-div">
-                <img src="/images/whatsapp.png" className="whatsapp-icon" />
-              </div>
-              {/* <BsWhatsapp color={"white"} className='whatsapp-icon'/> */}
-              <div className="whatsapp-contact">345554113 4135</div>
-            </div>
-
-            <div className="email">
-              <h2 className="email-footer-sec">Email: </h2>
-              <h6 className="footer-text-sec">trioapparels2011@gmail.com</h6>
-              <h6 className="footer-text-sec">
-                sreenath.trioapparels@gmail.com
-              </h6>
-            </div>
-            <div className="fax">
-              <h2 className="fax-heading">
-                Ph No/Fax: <span className="fax-contact">+91-80-4113 4135</span>
-              </h2>
             </div>
           </div>
         </div>

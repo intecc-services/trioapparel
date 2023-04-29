@@ -7,6 +7,9 @@
 }
 .brand {
   padding: 0 4rem;
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }
 .brand-name {
   display: flex;
@@ -18,7 +21,6 @@
   height: 50px;
   background-color: #e53535;
   border-radius: 50%;
-  /* padding:1rem; */
 }
 .brand-main {
   padding: 1rem;
@@ -30,6 +32,10 @@
   padding: 0 4rem;
   font-weight: 500;
   font-size: 1.1rem;
+}
+.link-home{
+  text-decoration: none;
+  color:black;
 }
 .link-about-us,
 .link-product,
@@ -55,6 +61,12 @@
 /* Mobile Version */
 .navbar-mobile-main {
   transition: all;
+  display:flex;
+  justify-content: space-between;
+  width:100%;
+}
+.navbar-mobile-flex1{
+  width:100%;
 }
 .drop-down {
   transition: 0.5s;
@@ -76,4 +88,35 @@
 .nav-link {
   text-decoration: none;
   color: white;
+}
+
+.brand-mob{
+  width:100%;
+  display:flex;
+  justify-content: end;
+  align-items: center;
+}
+.link-home-mobile{
+  display: flex;
+  justify-content: end;
+  width:100%;
+}
+.brand-name-mob{
+  color:white;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width:100%;
+}
+.brand-logo-mob{
+  width: 20px;
+  height: 20px;
+  background-color: #e53535;
+  border-radius: 50%;
+}
+.brand-main-mob{
+  padding: 1rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  width:100%;
 }

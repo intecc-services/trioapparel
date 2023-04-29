@@ -15,54 +15,39 @@ import NavbarMobile from "./components/navbar/NavbarMobile";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import Product from "./components/Product";
+import { Route, Routes } from "react-router-dom";
+import Page1 from "./pages/Page1";
+import Page2 from "./pages/Page2";
+import Page3 from "./pages/Page3";
+import Page4 from "./pages/Page4";
+import Page5 from "./pages/Page5";
+import Page6 from "./pages/Page6";
+import FormSection from "./components/Footer/formSection";
 
 function App() {
   return (
     <div className="App">
-      <div className="navbar-main"><Navbar/></div>
-      <div className="navbar-mobile"><NavbarMobile/></div>
-      {/* <ImgSlider img1={img1} img2={img1} img3={img1} img4={img1} img5={img1} img6={img1}/> */}
-      <div className="sectionOne">
-        <SectionOne />
+      <div className="navbar-main">
+        <Navbar />
       </div>
-
-      <div className="sectionOneStrip">
-        <SectionOneStrip />
-        <div className="section-one-contact-resp">
-          <SectionOneContact/>
+      <div className="navbar-mobile">
+        <NavbarMobile />
+      </div>
+      <Routes>
+        <Route exact path="/" element={<Page1 />} />
+        <Route exact path="/aboutus" element={<Page2 />} />
+        <Route exact path="/product" element={<Page3 />} />
+        <Route exact path="/oarsmen" element={<Page4 />} />
+        <Route exact path="/infrastructure" element={<Page5 />} />
+        <Route exact path="/whytrio" element={<Page6 />} />
+      </Routes>
+      <div>
+        <div className="imp-pad">
+          <FormSection />
         </div>
-      </div>
-
-      <div>
-        <Product />
-      </div>
-
-      <div className="our-products">
-        <OurProducts />
-      </div>
-
-     
-
-      <div className="our-products-2">
-        <Info/>
-      </div>
-      <div className="about-trio" id='aboutus'>
-        <AboutTrio />
-      </div>
-      <div className="why-trio">
-        <WhyTrio />
-      </div>
-      <div className="infrastructure">
-        <Infrastructure />
-      </div>
-      <div className="oarsmen-main">
-        <Oarsmen />
-      </div>
-      <div>
-        <Clientele />
-      </div>
-      <div>
-        <Footer />
+        <div>
+          <Footer />
+        </div>
       </div>
     </div>
   );

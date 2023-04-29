@@ -4,10 +4,6 @@ import OurProducts2 from "./OurProducts2";
 const Info = () => {
   return (
     <div className="info-our-products">
-      {/* <div className="info-image">
-        <img className="img-info-tag" src="/images/bg3.png" alt="not found" />
-      </div> */}
-      <div className="overlay-info"></div>
       <OurProducts2/>
     </div>
   );
