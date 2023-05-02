@@ -48,8 +48,8 @@ function FormSection() {
         <div className="footer-section-content-main">
           <div className="footer-section-content">
             <div className="FooterText">
-              <h1 className="apply-now">Apply now</h1>
-              <h1 className="for-trio">for TRIO</h1>
+              <h1 className="apply-now">Inquiry Form</h1>
+              <h1 className="for-trio">for Orders</h1>
             </div>
             <div className="card-section">
               <Card className="form-card">

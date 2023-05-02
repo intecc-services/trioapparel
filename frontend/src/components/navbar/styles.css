@@ -6,7 +6,7 @@
   font-family: 'Poppins';
 }
 .brand {
-  padding: 0 4rem;
+  /* padding: 0 4rem; */
   display:flex;
   justify-content: center;
   align-items: center;
@@ -26,6 +26,10 @@
   padding: 1rem;
   font-size: 1.2rem;
   font-weight: 600;
+}
+.brand-logo{
+  width:50%;
+  height:50%;
 }
 .navContent {
   display: flex;
@@ -106,7 +110,7 @@
   display: flex;
   justify-content: end;
   align-items: center;
-  width:100%;
+  /* width:100%; */
 }
 .brand-logo-mob{
   width: 20px;
@@ -114,9 +118,15 @@
   background-color: #e53535;
   border-radius: 50%;
 }
+.brand-logo-icon{
+  width:30%;
+  height:30%;
+}
 .brand-main-mob{
   padding: 1rem;
   font-size: 1.2rem;
   font-weight: 600;
   width:100%;
+  display:flex;
+  justify-content: end;
 }

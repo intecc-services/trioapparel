@@ -8,8 +8,10 @@ const Navbar = () => {
         <div className="brand">
           <NavLink to="/" className="link-home" style={{ color: "black" }}>
             <div className="brand-name">
-              <div className="brand-logo"></div>
-              <div className="brand-main">TRIO APPARELS</div>
+              {/* <div className="brand-logo"></div> */}
+              <div className="brand-main">
+                <img src='/images/logo.jpeg' className="brand-logo"/>
+              </div>
             </div>
           </NavLink>
         </div>
