@@ -49,12 +49,12 @@ function FooterDetails() {
             Home
           </a>{' '}
           |
-          <a className="footer-a" href="/">
+          <a className="footer-a" href="/aboutus">
             {' '}
             About Us{' '}
           </a>
           |
-          <a className="footer-a" href="/">
+          <a className="footer-a" href="/product">
             {' '}
             Product
           </a>
@@ -71,29 +71,6 @@ function FooterDetails() {
           Hyderabad -38
           <br />
         </h6>
-        <div className="footer-extra-links">
-          <div className="footer-extra-links-wrapper">
-            <a href="/" className="footer-icons">
-              <div className="footer-icon-wrapper">
-                <ImFacebook className="icon-main" />
-              </div>
-            </a>
-          </div>
-          <div className="footer-extra-links-wrapper">
-            <a href="/" className="footer-icons">
-              <div className="footer-icon-wrapper">
-                <TfiLinkedin className="icon-main" />
-              </div>
-            </a>
-          </div>
-          <div className="footer-extra-links-wrapper">
-            <a href="/" className="footer-icons">
-              <div className="footer-icon-wrapper">
-                <SiTwitter className="icon-main" />
-              </div>
-            </a>
-          </div>
-        </div>
       </div>
     </div>
     </>

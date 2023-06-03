@@ -157,7 +157,6 @@ export const infraImages = [
   {
     name:'Sampling and Inventory Section',
     images: [
-      '/images/infra/infra5840.JPG',
       '/images/infra/infra5885.JPG',
       '/images/infra/infra1.jpg',
       '/images/infra/infra2.jpg',

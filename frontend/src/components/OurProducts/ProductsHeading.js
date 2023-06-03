@@ -10,7 +10,7 @@ const ProductsHeading = () => {
         <div className='head-image-resp'>
             <img src="/images/bg2Resp.png" alt='not found' className='head-img-our-products'/>
         </div>
-        {/* <div></div> */}
+        {}
         <div className='overlay'></div>
         <div className='head-content'>
             Our Products

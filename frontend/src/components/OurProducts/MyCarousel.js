@@ -16,15 +16,24 @@ const MyCarousel = () => {
     <div className='mycarousel-our-products'>
         {/* MyCarousel */}
         <Swiper
-        slidesPerView={3}
-        spaceBetween={30}
+        breakpoints={{
+          300: {
+            // width: 576,
+            slidesPerView: 2,
+            spaceBetween : 10
+          },
+          768: {
+            // width: 768,
+            slidesPerView: 3,
+            spaceBetween : 30
+          },
+        }}
+        // slidesPerView={3}
         freeMode={true}
         pagination={{
           clickable: true,
         }}
         modules={[FreeMode, Pagination]}
-        // effect='cards'
-        // loop={true}
         className="mySwiper"
       >
         {

@@ -35,7 +35,9 @@ const NavbarMobile = () => {
         <NavLink to="/" className="link-home-mobile" style={{ color: "black" }}>
           <div className="brand-name-mob">
             {/* <div className="brand-logo-mob"></div> */}
-            <div className="brand-main-mob">TRIO APPARELS</div>
+            <div className="brand-main-mob">
+              <img src="/images/logo.png" className="brand-mob-logo"/>
+            </div>
           </div>
         </NavLink>
       </div>

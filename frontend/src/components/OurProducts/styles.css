@@ -1,9 +1,7 @@
 .our-products {
     background-color: black;
-    /* padding: 0 0 5rem 0; */
     position: relative;
     width: 100%;
-    /* height: 100vh; */
 }
 
 /* Products Heading */
@@ -56,13 +54,11 @@
     position: relative;
     width: 100%;
     height: 100%;
-    /* background-color: rgba(0,0,0,0.6); */
 }
 
 /* Carousel */
 .mycarousel-our-products{
     padding:4rem 0;
-    /* height: 50vh; */
 }
 .mySwiper{
     height: 100%;
@@ -71,21 +67,15 @@
 .our-carousel-item{
     width: 100%;
     padding:5rem;
-    height: 100%;
+    /* height: 100%; */
 }
 .our-carousel-item-img{
     width:100%;
+    height:450px;
 }
 .mycarousel-our-products .mySwiper .swiper-wrapper .our-carousel-item{
-    /* transform: scale(1.5); */
     width:100%;
 }
-/* .mycarousel-our-products .mySwiper .swiper-wrapper .swiper-slide-next{
-    transform: scale(1);
-}
-.mycarousel-our-products .mySwiper .swiper-wrapper .swiper-slide-active{
-    transform: scale(1.5) perspective(400px);
-} */
 .mycarousel-our-products .mySwiper .swiper-pagination .swiper-pagination-bullet{
     background-color: white;
 }
@@ -95,10 +85,8 @@
 /* Info */
 .info-our-products {
     width: 100%;
-    /* height: 100vh; */
     height: 100%;
     position: relative;
-    /* background-image: url('./bg3.png'); */
 }
 
 .info-image {
@@ -114,24 +102,20 @@
 
 
 .info-content {
-    /* position: absolute; */
     z-index: 90;
     top: 0;
     width: 100%;
     height: auto;
     background-color: black;
-    /* padding:1rem; */
 }
 
 .info-image-content {
     display: flex;
-    /* padding:0rem 1rem 0 0; */
     width: 100%;
     position: relative;
     top: 0;
     height: 100%;
     justify-content:center;
-    /* background-color: red; */
     z-index: 99;
 }
 
@@ -179,9 +163,6 @@
     font-family: 'Poppins';
     font-size: 1.2rem;
     height: 100%;
-    /* position: relative; */
-    /* background-color: red; */
-    /* padding: 4% 0; */
     z-index: 99;
 }
 
@@ -279,7 +260,6 @@
     /* carousel */
     .mycarousel-our-products{
         padding:1rem 0;
-        /* height: 50vh; */
     }
     .mySwiper{
         height: 100%;
@@ -287,17 +267,14 @@
     }
     .our-carousel-item{
         width: 100%;
-        /* padding:5rem; */
         height: 100%;
     }
     .our-carousel-item-img{
         width:150px;
         object-fit: fill;
-        height: 100%;
-        /* width:200px; */
+        height: 200px;
     }
     .mycarousel-our-products .mySwiper .swiper-wrapper .our-carousel-item{
-        /* transform: scale(1.5); */
         width:100%;
         height: 100%;
     }

@@ -1,6 +1,5 @@
 import React from 'react'
 import { whyTrio } from '../../general'
-// import {RiLuggageCartFill} from 'react-icons/ri'
 
 const PartTwo = () => {
   return (

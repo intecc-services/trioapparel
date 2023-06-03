@@ -1,5 +1,4 @@
 import React from "react";
-// import {CiGlobe} from 'react-icons/ci'
 import { FaGlobe } from "react-icons/fa";
 import { IoMdSettings } from "react-icons/io"
 import "./styles.css";

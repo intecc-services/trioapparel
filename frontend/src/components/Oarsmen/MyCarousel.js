@@ -41,13 +41,13 @@ const MyCarousel = () => {
                       alt="First slide"
                     />
                   </div>
-                  {/* <div className="caption-wrapper"> */}
+                  {}
                   <div className="item-caption">
                     <h3 className="item-name">{item.name}</h3>
                     <p className="item-p">{item.text1}</p>
                   </div>
                 </div>
-                {/* </div> */}
+                {}
               </Carousel.Item>
             );
           })}

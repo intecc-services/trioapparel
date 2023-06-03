@@ -1,6 +1,5 @@
 import React from "react";
 import "./styles.css";
-// import { NavLink } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 const ProductButton = ()=>{

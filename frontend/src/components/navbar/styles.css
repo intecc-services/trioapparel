@@ -2,7 +2,7 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 2rem 0;
+  padding: 4% 0;
   font-family: 'Poppins';
 }
 .brand {
@@ -10,21 +10,21 @@
   display:flex;
   justify-content: center;
   align-items: center;
+  /* width:100%; */
 }
 .brand-name {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.brand-logo {
+/* .brand-logo {
   width: 50px;
   height: 50px;
   background-color: #e53535;
   border-radius: 50%;
-}
+} */
 .brand-main {
-  padding: 1rem;
-  font-size: 1.2rem;
+  padding: 10%;
   font-weight: 600;
 }
 .brand-logo{
@@ -32,10 +32,17 @@
   height:50%;
 }
 .navContent {
+  width:100%;
   display: flex;
-  padding: 0 4rem;
+  justify-content: space-between;
+  padding: 0 4%;
   font-weight: 500;
-  font-size: 1.1rem;
+  font-size: 20px;
+}
+.nav-second-part{
+  width:100%;
+  display:flex;
+  justify-content: end;
 }
 .link-home{
   text-decoration: none;
@@ -48,11 +55,10 @@
 .link-home {
   text-decoration: none;
   color: black;
-  padding: 0 3rem;
 }
 .nav-part,
 .nav-part-home {
-  padding: 1rem 0;
+  padding: 5% 2%;
 }
 .nav-part-home {
   background-color: black;
@@ -99,6 +105,11 @@
   display:flex;
   justify-content: end;
   align-items: center;
+}
+.brand-mob-logo{
+  /* padding:0 10% 10% 10%; */
+  width:30%;
+  height:30%;
 }
 .link-home-mobile{
   display: flex;
