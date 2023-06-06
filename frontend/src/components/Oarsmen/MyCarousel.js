@@ -10,22 +10,22 @@ import Carousel from "react-bootstrap/Carousel";
 
 const MyCarousel = () => {
   const [index, setIndex] = useState(0);
-
+  const [winWidth,setWinWidth] = useState(1440);
   const handleSelect = (selectedIndex, e) => {
     setIndex(selectedIndex);
+    setWinWidth(window.innerWidth)
   };
 
   return (
     <div className="oarsmen-carousel">
       <div className="oarsmen-carousel-wrapper">
         <div className="oarsmen-bg">
-          <img src="/images/oarsmen/oarsmen.png" className="oarsmen-img-bg"/>
-        <div className="oarsmen-heading">OARSMEN</div>
-          
-          </div>
+          <img src="/images/oarsmen/oarsmen.png" className="oarsmen-img-bg" />
+          <div className="oarsmen-heading">OARSMEN</div>
+        </div>
         <Carousel
-          nextIcon={<FaAngleRight color="white" className="icon-imp" />}
-          prevIcon={<FaAngleLeft color="white" className="icon-imp" />}
+          nextIcon={<FaAngleRight color={winWidth<=600?"white":"black"} className="icon-imp" />}
+          prevIcon={<FaAngleLeft color={winWidth<=600?"white":"black"} className="icon-imp" />}
           activeIndex={index}
           onSelect={handleSelect}
           indicators={true}

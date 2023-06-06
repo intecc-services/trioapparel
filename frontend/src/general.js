@@ -72,7 +72,6 @@ export const flexInfo = [
     image: '/images/flexImg3.png',
     heading: 'Social Compliance',
     p1: 'Trio Apparels is committed to follow corporate social responsibility since its inception. To follow the defined local rules and regulations is an important aspect of Trio Apparels’ business philosophy. An experienced and well­ trained team of in­house auditors are in place at every stage of functioning of our unit. The General Social Compliance Audit is in place and to that effect the Certification is provided by TUV Rheinland, the global provider of technical, safety and certification services. It surely serves the purpose for our clients to be sure of the standards we maintain',
-    p2: 'Our corporate social responsibility program does not end with the implementation of just the legal requirements. Efforts are constantly made to establish a system create the feel of oneness and the familial bearing with a get together once in every 3 months for the entire Trio family and also for them to go through the rigors of training.',
   },
 ];
 
