@@ -39,7 +39,14 @@ function FormSection() {
       console.log('FAILED...', error);
     });
   };
-  
+  const handleClear = ()=>{
+    setFormData({
+      name:"",
+      email:"",
+      number:"",
+      quantity:null
+    })
+  }
   return (
     <div>
       <div className="form-section">
@@ -79,7 +86,7 @@ function FormSection() {
                       <input
                         className="input-fields"
                         type="text"
-                        placeholder="enter your number"
+                        placeholder="enter your phone number"
                         onChange={handleChange}
                         name = "number"
                         value = {formData.number || ""}
@@ -90,11 +97,11 @@ function FormSection() {
                       type='number'
                         className="text-area"
                         placeholder="Enter Quantity"
-                        value={formData.quantity || 0}
+                        value={formData.quantity==="0"?"":formData.quantity}
                         onChange = {handleChange}
                         name = "quantity"
                       />
-                    <Button variant="outline-dark" className="form-button">
+                    <Button variant="outline-dark" className="form-button" onClick={handleClear}>
                     Clear
                   </Button>
                  
