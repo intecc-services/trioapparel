@@ -44,7 +44,7 @@ export const carousel1 = [
   {
     image: '/images/carousel2.png',
     text1:
-      'We are a certified company that proves our credibility in terms of how our esteemed clients can rely on us. We have the following quality policy',
+      'We are a certified company that proves our credibility in terms of how our esteemed clients can rely on us.',
   },
   {
     image: '/images/carousel3.png',
@@ -104,7 +104,7 @@ export const whyTrioImages = [
     text: 'Best Quality',
   },
   {
-    image: '/images/whyTrio2.png',
+    image: '/images/whytrio2.png',
     text: 'Friendly workspace',
   },
   {

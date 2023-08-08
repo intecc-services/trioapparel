@@ -5,7 +5,7 @@ const ProductDetails = ()=>{
     return (
         <div className="product-details-div">
         <h4 className="product-details">
-            Trio appareal is the state-of-the-art garment manufacturing comapny where fabric made into quality finished products. Trio is specialized in making Shirts -  both Formals and Casuals.
+            Trio appareal is the state-of-the-art garment manufacturing company where fabric made into quality finished products. Trio is specialized in making Shirts -  both Formals and Casuals.
         </h4>
         </div>
     )
